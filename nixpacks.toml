@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["jdk21_headless", "maven"]
-
-[phases.build]
-cmds = ["mvn -B -DskipTests clean package"]
-
-[start]
-cmd = "java -jar target/ai-proxy-backend-1.0.0.jar"
